@@ -1,0 +1,21 @@
+Cucumber
+(https://medunna.com/) sitesinin testlerini gerçekleştirdiğimiz bu projemizde Cucumber framework ile çalıştık.Bu framework de Object Oriented Programming(OOP) konseptine uyarak Page Object Model(POM) dizayn modelini kullandık.
+
+Page Dosyası
+Pages dosyamızda testini yaptığımız sitenin testlerini gerçekleştireceğimiz elementlerin locatelerini locatorlar yardımıyla oluşturduğumuz classlarımız bulunmakta. kullanacağımız locateleri almak için oluşturduğumuz classın adında constructar oluşturuyoruz ve içine PageFactory classını ve içerisine driverı çağırıp, burada olduğunu belli ettiğimiz this key kullanılır. Locatelerimizi getirmek için de FindBy notasyonunu kullanırız.
+
+#Test Dosyası
+
+Tests dosyamızda otomasyon kodlarımızı, test raporlarımızı ve failed olan kısımların ekran goruntulerinin alınacagı kodlarımızı olusturulup run etmeye hazır hale getirdik.
+
+Utilities Dosyası
+Utilities Package ında projemizi daha anlaşılır hale getirecek classlarımız ve methodlarımız vardır. Bunlar Authentication, ConfigReader,DataBaseUtility, Driver, ReadText, ReusableMethods, WriteToText vb. dosyalarımız bulunmaktadır.
+
+Configuration.properties
+Properties dosyamızda sürekli kullandığımız variablelarımız Key = value olarak oluşturulmaktadır. Buradaki bilgileri başka classlara çağırabilmek için utilities Package ından ConfigReader classı çağrılır. Methodlar sayesinde istediğimiz kodlardan bu bilgilere ulaşabiliriz.
+
+Pom.xml
+Tüm kod bilgilerimizin bulunduğu bu dosyada kullanmak istediğimiz kodların kütüphanesini dependencies tagının içerisinde bulundurarak güncel bilgilerini sürekli olarak bulun durabiliriz. Dependencies sayesinde tüm kodlara erişimi sağlayabiliriz.
+
+Selenium Testi
+Java11 ve Maven projesi oluşturulup Cucumber framework kullanılarak oluşturulmuştur.

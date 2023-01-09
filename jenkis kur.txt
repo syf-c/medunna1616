@@ -1,0 +1,10 @@
+JENKINS (java 11 ve üzeri çalışır-tercihen 11);
+1) Masaüstüne klasör olustur. isim---> jenkins
+2) https://updates.jenkins-ci.org/download/war/   -- sitesinden jenkins.war en son gunceli indir ve klasöre at
+3) Klasörü açıp yoluna cmd yaz kara kaplı defteri aç (açık kalsın)
+   Buraya;
+   -java -jar jenkins.war  --->  bunu yaz enter deyince kurar..
+   -siteye git ====  --> http://localhost:8080/  --kull adi sifre olustur kur ilk etapta
+   İşlemler bu siteden yapılır
+NOT: hata verirse bunu yaz ---> java -jar jenkins.war --httpPort=8081
+               ---> http://localhost:8081
